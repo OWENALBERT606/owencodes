@@ -1,13 +1,17 @@
 
-import { Hero } from '@/components/Hero'
+import Hero from '@/components/Hero'
+import ProjectsHero from '@/components/ProjectsHero'
 import React from 'react'
 
 export default function page() {
+
   return (
     <div>
-        <Hero/>
+        <ProjectsHero/>
         <div className="">
-          other projects
+          <div className="tabs">
+            tabs
+          </div>
         </div>
     </div>
   )
