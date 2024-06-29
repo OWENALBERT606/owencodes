@@ -1,6 +1,7 @@
 "use client"
 import { useState } from 'react'
 import ModeBtn from './ModeBtn'
+import Image from 'next/image'
 
 export default function NavBar (){
 
@@ -23,7 +24,7 @@ export default function NavBar (){
                 <div className="flex items-center justify-between gap-12 px-4 py-3">
                     <div className="">
                     <a href="javascript:void(0)">
-                        <img
+                        <Image
                             src="/computer-program-coding-screen.jpg"
                             width={60}
                             height={25}

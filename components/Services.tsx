@@ -46,8 +46,8 @@ export default function Services() {
       </div>
       <div className='w-full'>
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          {services.map((service, index) => (
-              <div  onMouseEnter={(e) => {
+          {services.map((service, i) => (
+              <div key={i}  onMouseEnter={(e) => {
                 e.currentTarget.style.transform = 'rotateX(70deg) translateZ(0)';
               }}
               onMouseLeave={(e) => {
