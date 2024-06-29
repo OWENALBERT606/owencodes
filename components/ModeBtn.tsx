@@ -1,29 +1,4 @@
-// "use client"
 
-// import {  MoonIcon, Sun } from 'lucide-react'
-// import React, { useState } from 'react'
-// import { useTheme } from 'next-themes'
-
-
-// // const ThemeChanger = () => {
-    
-// //     // console.log(theme);
-// // }
-
-
-// export default function ModeBtn() {
-//     const { setTheme } = useTheme()
-// //   const {mode, setMode } = useState("light");
-//   return (
-//     <button className='dark:bg-black py-3'>
-//        {
-//         mode==='dark'?(<Sun className='text-white font-2xl' onClick={()=>setTheme('light')}/>):
-//         (<MoonIcon className='text-white font-2xl'onClick={()=>setTheme('dark')}/>)
-//        }
-
-//     </button>
-//   )
-// }
 
 "use client"
 
@@ -38,6 +13,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+
 
 export default function ModeBtn() {
   const { setTheme } = useTheme()
