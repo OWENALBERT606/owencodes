@@ -81,3 +81,49 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+/* CSS */
+.ourprojects {
+  /* Styles for .ourprojects container */
+}
+
+.projects {
+  /* Styles for .projects container */
+}
+
+.project {
+  height: 18rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: .5s ease-in;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  @media (max-width: 768px) {
+    height: 12rem;
+  }
+
+  &:hover {
+    border-top-right-radius: 120px;
+  }
+}
+
+.project .overlay {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.project .card {
+  position: absolute;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.689);
+  top: 0;
+  z-index: 11;
+  opacity: 0;
+  transition: .5s ease-in-out;
+}
+
+.project:hover .card {
+  opacity: 1;
+}

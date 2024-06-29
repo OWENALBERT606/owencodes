@@ -10,7 +10,7 @@ export default function NavBar (){
     const navigation = [
         { title: "Home", path: "/" },
         { title: "My services", path: "#services" },
-        { title: "My projects", path: "#projects" },
+        { title: "My projects", path: "/projects" },
         { title: "Contact me", path: "#contacts" },
         { title: "Market Place", path: "javascript:void(0)" }
     ]
